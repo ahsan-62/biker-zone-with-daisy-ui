@@ -47,7 +47,7 @@
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -70,10 +70,10 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-4xl">Biker Zone</a>
+            <a class="text-4xl btn btn-ghost">Biker Zone</a>
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal text-base px-1">
+          <div class="hidden navbar-center lg:flex">
+            <ul class="px-1 text-base menu menu-horizontal">
               <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
@@ -81,7 +81,7 @@
             </ul>
           </div>
           <div>
-            <a class="btn bg-btn-biker text-white">Login</a>
+            <a class="text-white btn bg-btn-biker">Login</a>
           </div>
         </div>
       </nav>
@@ -89,18 +89,24 @@
       <!-- Slider or carousel -->
 
       <div class="carousel w-full bg-biker-bg h-[550px]">
-        <div id="slide1" class="carousel-item relative w-full p-24">
-          <div class="flex">
-            <div class="space-y-4 flex-1">
-              <h3 class="text-6xl">Ride-on R15 V4 <br />with Smile</h3>
-              <p class="text-base">
+        <div id="slide1" class="relative w-full carousel-item">
+          <div
+            class="flex flex-col items-center gap-20 p-4 lg:p-24 lg:flex-row"
+          >
+            <div class="flex-1 space-y-4">
+              <h3 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h3>
+              <p class="text-base font-light">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
               </p>
-              <button class="btn bg-btn-biker" type="button">Purchase</button>
+              <button class="text-white btn bg-btn-biker" type="button">
+                Purchase
+              </button>
             </div>
             <div class="flex-1">
-              <img src="images/slider/bike1.png" class="" />
+              <img src="images/slider/bike1.png" />
             </div>
           </div>
           <div
@@ -110,8 +116,24 @@
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <img src="images/slider/bike2.png" class="w-full" />
+        <div id="slide2" class="relative w-full carousel-item">
+          <div class="flex gap-8 p-24">
+            <div class="flex-1 space-y-4">
+              <h3 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h3>
+              <p class="text-base font-light">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <button class="text-white btn bg-btn-biker" type="button">
+                Purchase
+              </button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike2.png" />
+            </div>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -119,8 +141,24 @@
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div id="slide3" class="carousel-item relative w-full">
-          <img src="images/slider/bike3.png" class="w-full" />
+        <div id="slide3" class="relative w-full carousel-item">
+          <div class="flex gap-8 p-24">
+            <div class="flex-1 space-y-4">
+              <h3 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h3>
+              <p class="text-base font-light">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <button class="text-white btn bg-btn-biker" type="button">
+                Purchase
+              </button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike3.png" />
+            </div>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -128,8 +166,24 @@
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div id="slide4" class="carousel-item relative w-full">
-          <img src="images/slider/bike4.png" class="w-full" />
+        <div id="slide4" class="relative w-full carousel-item">
+          <div class="flex gap-8 p-24">
+            <div class="flex-1 space-y-4">
+              <h3 class="text-6xl font-bold">
+                Ride-on R15 V4 <br />with Smile
+              </h3>
+              <p class="text-base font-light">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <button class="text-white btn bg-btn-biker" type="button">
+                Purchase
+              </button>
+            </div>
+            <div class="flex-1">
+              <img src="images/slider/bike4.png" />
+            </div>
+          </div>
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -140,7 +194,18 @@
       </div>
     </header>
 
-    <main class="md:container md:mx-auto"></main>
+    <main class="md:container md:mx-auto">
+      <section>
+        <div class="text-center mt-36">
+          <h2 class="text-5xl font-semibold text-[#000]">
+            Fetured Bikes In This Year
+          </h2>
+          <p class="text-base font-semibold text-[#E76F51]">
+            Best bike collection
+          </p>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
